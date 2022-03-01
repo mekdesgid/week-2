@@ -152,3 +152,16 @@ else
 
 
 fi
+
+
+
+while getopts ":f" opt; do
+  case $opt in
+    f)
+      echo "/Users/mqdsgydlw/Documents/DevOps/week2" >&2
+      ;;
+    \?)
+       echo "Invalid option: -$OPTARG" >&2
+      ;;
+  esac
+done
